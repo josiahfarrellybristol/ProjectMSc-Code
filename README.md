@@ -12,15 +12,17 @@ make-dataset.py - handles graph generation from the output of generate3D
 
 GNN_Tidied.py - main GNN code, usage:
 
-```python GNN_Tidied.py <IDENTIFIER>'
-
+```
+python GNN_Tidied.py <IDENTIFIER>'
+```
 where IDENTIFIER is appended to the output datafiles.
 
 
 Data output from GNN_Tidied.py requires a current working directory setup as follows:
 
 
-```(CWD)
+```
+(CWD)
 -GNN_Tidied.py
 -make-dataset.py
 -generate3D_EdgeFull.py
@@ -29,3 +31,4 @@ Data output from GNN_Tidied.py requires a current working directory setup as fol
 -(Models)
 -(Data)
 -(Datasets)
+```
