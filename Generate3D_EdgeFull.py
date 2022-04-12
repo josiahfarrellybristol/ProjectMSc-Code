@@ -1,10 +1,9 @@
 '''
 
-    3D toy dataset generator - adapted with reference to Alex Marshall's generator.py
+    3D toy dataset generator - adapted with reference to Alex Marshall's generator.py, see https://github.com/alexmarshallbristol/GNN_example
 
 '''
 from cmath import pi
-from xml.sax.xmlreader import InputSource
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
@@ -261,9 +260,6 @@ def generate_3D(nTracks=10, plot = False, GaussBlur = 0, Cheat = False, Dense = 
 
     #Grab edge features of the finalised edges:
 
-
-
-
     edge_list = np.moveaxis(np.where(adjacency_matrix), 0,1)
     diffs = input[edge_list[:,1],:] - input[edge_list[:,0],:]
 
@@ -271,11 +267,6 @@ def generate_3D(nTracks=10, plot = False, GaussBlur = 0, Cheat = False, Dense = 
     diff_theta = np.arctan(np.sqrt(diffs[:,1]**2 + diffs[:,2]**2) / 2.)
 
     edge_features = np.stack((diff_theta, diff_phi), axis = 1)
-
-
-    # print(edge_features)
-    # plt.matshow(adjacency_matrix)
-    # plt.show()
 
     if plot == True:
 
@@ -355,16 +346,3 @@ def MakeAdjancency(submatrix_dim, large_matrix_dim, Cheat=False, Dense=True, **k
 
     return np.block(eval(ms))
 
-
-
-
-#generate_3D(20, Cheat=False, undirectedEdges = False, Dense = True, GaussBlur = 0, scanning_radius=0.2)
-
-# start = perf_counter()
-
-# for i in range(20):
-#     generate_3D(20, GaussBlur = 0.02, Cheat=False)
-
-# end = perf_counter()
-
-# print((end-start)/20)
