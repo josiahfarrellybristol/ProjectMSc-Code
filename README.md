@@ -10,10 +10,10 @@ generate3D_EdgeFull.py - a Monte-Carlo simulation, generating particle tracks fr
 
 make-dataset.py - handles graph generation from the output of generate3D
 
-GNN_Tidied.py - main GNN code, usage:
+GNN.py - main GNN code, usage:
 
 ```
-python GNN_Tidied.py <IDENTIFIER>'
+python GNN.py <IDENTIFIER>'
 ```
 where IDENTIFIER is appended to the output datafiles.
 
@@ -33,4 +33,4 @@ Data output from GNN_Tidied.py requires a current working directory setup as fol
 -(Datasets)
 ```
 
-Dataset parameters are controlled within the code of GNN_Tidied - will generate a dataset if none exists in the searched path. To change the parameters, source file must be edited - sorry!
+Dataset parameters are controlled within the code of GNN - will generate a dataset if none exists in the searched path. To change the parameters, source file must be edited - sorry!
