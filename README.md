@@ -33,4 +33,4 @@ Data output from GNN_Tidied.py requires a current working directory setup as fol
 -(Datasets)
 ```
 
-Dataset parameters are controlled within the code of GNN - will generate a dataset if none exists in the searched path. To change the parameters, source file must be edited - sorry!
+Dataset parameters are controlled within the code of GNN.py - will generate a dataset if none exists in the searched path. To change the parameters, source file must be edited - sorry!
