@@ -16,7 +16,7 @@ GNN_Tidied.py - main GNN code, usage 'python GNN_Tidied.py <IDENTIFIER>', where 
 Data output from GNN_Tidied.py requires a current working directory setup as follows:
 
 
-(CWD)
+```(CWD)
 -GNN_Tidied.py
 -make-dataset.py
 -generate3D_EdgeFull.py
@@ -24,4 +24,4 @@ Data output from GNN_Tidied.py requires a current working directory setup as fol
 -(Figures)
 -(Models)
 -(Data)
--(Datasets)
+-(Datasets)```
